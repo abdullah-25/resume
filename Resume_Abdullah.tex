@@ -1,0 +1,428 @@
+%-------------------------
+% Resume in Latex
+% Author : Muhammad Abdullah
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-9pt}\scshape\raggedright\large
+}{}{0em}{}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{}
+\color{BrickRed}
+    \textbf{\huge \scshape Muhammad Abdullah} \\\vspace{8pt}
+    
+   
+    
+    % \small (+1) 647-323-6920 $|$ 
+    \href{mailto:
+    abdullahimv25@gmail.com
+    }{\underline{Email}} $|$ 
+    \href{https://www.linkedin.com/in/abdullahim/}{\underline{Linkedin}} $|$
+    \href{https://github.com/abdullah-25}
+    {\underline{Github}} $|$ 
+    \href{https://muhammad-abdullah.netlify.app/}
+    {\underline{Portfolio}} $|$ 
+    {\underline{Toronto, ON}}
+   
+\end{center}
+
+   
+\noindent\rule{19cm}{0.4pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\textbf{\color{BrickRed}Technical Skills}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+
+    \small{\item{
+     \textbf{Proficient}{: JavaScript, Python, HTML, CSS, C/C++, React, Node, Express, GraphQL, Postgres, REST, Firebase
+     } \\ 
+      \vspace{1pt}
+     \textbf{Exposed}{: TypeScript, React Native, Jest, Prisma, Apollo, SQLAlchemy, Pandas, NumPy, Serverless AWS, EC2, S3
+    } \\
+     \vspace{1pt}
+    \textbf{Tools}{: Git, GitHub, GitLab, Jupyter Notebook, Expo CLI, Expo Go, Jira, Asana, Heroku} \\
+     \vspace{-1pt}
+    
+ \end{itemize}
+
+\noindent\rule{19cm}{0.4pt}
+
+%-----------EXPERIENCE-----------
+\section{\textbf{\color{BrickRed}Work Experience}}
+  \resumeSubHeadingListStart
+
+    % \resumeSubheading
+    %   {Software Engineer}{Sep 2023 - Present}
+    %   {MultplAI (Stealth Startup)}{Toronto, ON}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed and implemented a Python-based matching engine utilizing object-oriented programming (OOP) principles to enhance the accuracy of matching scores between user resumes and job descriptions, achieving a 30\% improvement over traditional LLM models}
+    %     \resumeItem{}
+       
+    %      \resumeItem{}
+    %   \resumeItemListEnd
+
+       \resumeSubheading
+      {Machine Learning Engineer}{Sep 2022 - Apr 2023}
+      {Infrastructure Health \& Safety Association (Contract Position at University of Toronto)}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Spearheaded the development of a predictive model in Python alongside a team of data scientists, employing an advanced random forest regressor algorithm to conduct an in-depth analysis of accident causality}
+        \resumeItem{Executed feature selection and hyper parameter tuning techniques to maximize the model's predictive accuracy}
+       
+         \resumeItem{Rigorously tested the model's performance on diverse datasets, each comprising over 100,000 data entries, ensuring its adaptability across various scenarios and data distributions }
+      \resumeItemListEnd
+      \vspace{4pt}
+ 
+     \resumeSubheading
+      {Software Developer Intern}{Apr 2022 - Sep 2022}
+      {York Region District School Board}{Richmond Hill, ON}
+          \resumeItemListStart
+          \resumeItem{Redesigned existing ETL jobs to the latest version of SQL Server Integration Services using Microsoft Visual Studio}
+        \resumeItem{Transformed 15+ stored procedures with continuous integration, tailored to client needs and company culture; optimized system performance, resulting in streamlined processes for 1,500 employees}
+        \resumeItem{Orchestrated seamless collaboration within a team of four in agile software development, addressed critical scalability issues, resulting in recognition from the Project Facilitator for exceptional teamwork and project success}
+          \resumeItemListEnd
+  
+ 
+
+   
+
+    % \resumeProjectHeading
+    %  {\textbf{\underline{\href{https://www.ihsa.ca/}{Infrastructure Health \& Safety Association}}} $|$ \emph{Machine Learning Engineer}}{Sep 2022 - Apr 2023}
+    %  \vspace{3pt}
+    %       \resumeItemListStart
+         
+        
+    %     \resumeItem{Spearheaded the development of a predictive model in Python alongside a team of data scientists, employing an advanced random forest regressor algorithm to conduct an in-depth analysis of accident causality}
+    %     \resumeItem{Executed feature selection and hyper parameter tuning techniques to maximize the model's predictive accuracy}
+       
+    %      \resumeItem{Rigorously tested the model's performance on diverse datasets, each comprising over 100,000 data entries, ensuring its adaptability across various scenarios and data distributions }
+    %      % {\textbf{{\href{https://docs.google.com/presentation/d/1yxpp_M9nvrWzM3edz7KETk5a5uoraAX9/edit?usp=sharing&ouid=108005686342410429126&rtpof=true&sd=true}{\color{BrickRed}(Demo)}}}}}
+
+            
+    %       \resumeItemListEnd
+
+        
+    
+    
+    \noindent\rule{19cm}{0.4pt}
+   
+       
+       
+
+
+
+%    \resumeSubheading
+%      {Mentor}{February 2022}
+ %     {UofTHacks IX}{Toronto, On}
+%      \resumeItemListStart
+%        \resumeItem{Organised and assisted smooth operation of a hackathon by providing technical solutions to 800+ hackers}
+ %   \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+   
+    
+ 
+
+  
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{\textbf{\color{BrickRed}Projects}}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          % {\textbf{QuickMeals} $|$ \emph{React, Saas, Axios}}{July 2023}
+          {\textbf{\underline{\href{https://github.com/abdullah-25/graphql-movie-api/tree/development}{Movie Management API}}} $|$ \emph{TypeScript, GraphQL, Apollo, PostgresSQL, Prisma, JWT, Jest}}{\href{https://www.loom.com/share/5619b057aed34bcd9255eed2a1e7f4e3?sid=d1e58adf-b491-4cfb-8754-058bed17d70a}{\color{BrickRed}\faIcon{link}}}
+           \vspace{3pt}
+          \resumeItemListStart
+            \resumeItem{
+            Created a CRUD API + Search and filter APIs with Apollo graphql and PostgreSQL (Prisma ORM)
+database
+}
+ \resumeItem{Engineered a secure user authentication and authorization system, allowing users to register, log in, and receive JWT tokens for authenticated access
+}
+\resumeItem{Conducted thorough unit testing of the GraphQL API using Jest to ensure the reliability and correctness of the code}
+
+          \resumeItemListEnd
+\vspace{-4pt}
+     \resumeProjectHeading
+          % {\textbf{FitBuddy} $|$ \emph{React, Node.js, Firebase, MySQL}}{August 2023}
+           {\textbf{\underline{\href{https://github.com/abdullah-25/FitBuddy}{FitBuddy}}} $|$ \emph{React, Node.js, Firebase, MySQL}} {\href{https://www.loom.com/share/37a01885e49f41f0936140d8ea3e569f?sid=233a6ab5-8508-477c-b692-8797c05fccdb}{\color{BrickRed}\faIcon{link}}}
+           
+           
+
+          \resumeItemListStart
+            \resumeItem{Built a responsive fitness tracking app that visualizes user's weightlifting progress through interactive charts
+}
+
+            
+            \resumeItem{Leveraged Firebase SDk authentication to allow users to log in with pre-existing Google credentials, minimizing the barriers of entry as well as delegating the responsibility of authentication to a trusted, secure API}
+            \resumeItem{Utilised WebPack and Lazy loading that resulted in increase in page reload speed by 60\% }
+            \resumeItem{Incorporated Chakra UI for styling UI and ensure faster development time
+}
+            \resumeItem{Designed deployment strategy on Heroku and Github action to allow CI/CD}
+            
+
+            
+          \resumeItemListEnd
+
+          
+    
+    \resumeProjectHeading
+          % {\textbf{InStock} $|$ \emph{React, Node.js, Figma, MySQL, Jira}}{July 2023}
+          {\textbf{\underline{\href{https://github.com/abdullah-25/InStock}{InStock}}} $|$ \emph{React, Node.js, Figma, MySQL, Jira}}{\href{https://www.loom.com/share/0b266c2cb1da44109294fb6114cc9e46?sid=16d9657e-145d-41f4-ba41-463e94d40cbd}{\color{BrickRed}\faIcon{link}}}
+          \resumeItemListStart
+            \resumeItem{Implemented React-Router to craft a single-page application through client-side rendering, optimizing performance by establishing static routes and minimizing server requests
+            
+}
+%  \resumeItem{Designed and implemented a scalable REST API with CRUD functionality using Express.js to handle HTTP requests for task tracking, ensuring scalability by modularizing code and leaving room for adding more features in future iterations
+% }
+            \resumeItem{Coordinated team using Jira during development, delegating tasks and features to focus teammates on achieving MVP goals
+}
+         
+
+            
+          \resumeItemListEnd
+
+
+         
+            % \resumeProjectHeading
+          % {\textbf{BrainFlix} $|$ \emph{React, Node.js, Express}}{June 2023}
+%           {\textbf{\underline{\href{https://github.com/abdullah-25/industry-project/}{Google's Hackathon}}} $|$ \emph{React, Node.js, Express}}{\href{https://www.loom.com/share/fcba144efac14d268a3bfdeb35d16cc1?sid=37970d9f-fb27-4a27-9030-e9ee4833e0ad}{\color{BrickRed}\faIcon{link}}}
+%            \vspace{2pt}
+%           \resumeItemListStart
+%             \resumeItem{
+%             Redesigned a responsive Gmail's App to integrate AI related features in Google's ecosystem
+% }
+%  \resumeItem{
+%           Iterated on feedback from product manager and UX/UI designers to make application easy to use for customers }
+  \resumeItemListEnd
+
+\noindent\rule{19cm}{0.4pt}
+
+%-----------EDUCATION-----------
+\section{\textbf{\color{BrickRed}Education}}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{BrainStation} $|$ \emph{Diploma In Software Engineering }$|$ \emph{Grade: A+ }}{Aug 2023}
+          \vspace{4pt}
+    \resumeProjectHeading
+          {\textbf {University of Toronto} $|$ \emph{Bachelor of Applied Science in Civil Engineering}}{Class of 2023}
+          \vspace{2pt}
+           \resumeItemListStart
+      \resumeItem{Relevant Coursework: Fundamentals of Computer Programming, Data Structures and Analysis, Applied Fundamentals of Artifcial Intelligence, Data Sciene for Civil and Mineral Engineering}
+      \resumeItemListEnd
+     
+     
+      \resumeItemListEnd
+ 
+        
+
+            
+        
+
+%              \resumeProjectHeading
+%           % {\textbf{BrainFlix} $|$ \emph{React, Node.js, Express}}{June 2023}
+%           {\textbf{\underline{\href{https://joyful-sundae-eea8ff.netlify.app/}{BrainFlix}}} $|$ \emph{React, Node.js, Express}}{\href{https://github.com/abdullah-25/FitBuddy/tree/production-ready}{\color{BrickRed}\faIcon{link}}}
+%           \resumeItemListStart
+%             \resumeItem{
+%             Built a responsive full stack application using vanilla Js that allows users to play and store videos  
+% }
+%  \resumeItem{
+%            Added dynamic video upload, likes and comments functionality by leveraging a pre built API}
+ 
+        
+
+            
+%           \resumeItemListEnd
+          
+          
+    % \resumeProjectHeading
+    %       {\textbf{BrainFlix} $|$ \emph{Javascript, React, NodeJs, Express, Axios, Router, Postman, HTML, CSS, Sass}}{June 2023}
+    %       \resumeItemListStart
+    %         \resumeItem{Successfully developed and deployed a dynamic video upload application, similar to YouTube, utilizing React for the front end and Node.js/Express for the backend}
+    %         \resumeItem{Implemented robust React routing, enabling seamless navigation and enhancing user experience, while ensuring a smooth and intuitive browsing experience for users}
+    %         \resumeItem{Developed REST API, using Monolithic architecture, leveraging Node.js and Express, allowing users to interact with the application by adding comments, likes, and deleting options for enhanced engagement and functionality}
+    %         \resumeItem{Achieved a fully responsive design across multiple devices, including mobile, tablet, and desktop, ensuring optimal user experience and accessibility across various platforms and screen sizes}
+            
+            
+            
+    %       \resumeItemListEnd
+          %  \resumeProjectHeading
+          % {\textbf{Capstone Project} $|$ \emph{Python, Machine Learning Models, Linear Regression}}{April 2023}
+          % \resumeItemListStart
+          %   \resumeItem{Managed a team of 5 students from different technical discipline on a data-intensive capstone project}
+          %    \resumeItem{Performed feature selection and Hyper tuning of the machine learning model and tested on various datasets}
+          %   \resumeItem{Performed feature selection and Hyper tuning of the machine learning model and tested on various datasets}
+           
+           
+            
+            
+            
+          % \resumeItemListEnd
+          
+ 
+    
+    
+    
+    
+    
+    
+    
+     
+      
+      
+           
+ 
+       
+         
+          
+        %   \resumeProjectHeading
+        %  {\textbf{AutoCAD }}{May 2020}
+        %  \resumeItemListStart
+        %    \resumeItem{Produced drawing defining the %concrete dimensions of a precast U-girder segment, %precast
+%concrete pier cap, bridge pier and many other with proper %annotations according to course standard}
+      %    \resumeItemListEnd
+          
+        %\resumeProjectHeading
+          
+          %\resumeProjectHeading
+          %{\textbf{Abdullah’s Workspace } $|$ \emph{HTML, CSS, JavaScript}}{December 2020}
+         % \resumeItemListStart
+           % \resumeItem{Built a chrome extension with HTML, CSS, and JS to easily access my personal university websites to boost my productivity and published it on Google store}
+          %\resumeItemListEnd
+          
+        %\resumeProjectHeading
+          
+          
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+
+
+
+
+
+
+%-------------------------------------------
+\end{document}
